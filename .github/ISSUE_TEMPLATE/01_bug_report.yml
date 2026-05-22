@@ -3,8 +3,6 @@ description: File a bug report.
 title: "[Bug]: "
 labels: ["bug"]
 projects: []
-assignees:
-  - octocat
 body:
   - type: markdown
     attributes:
@@ -19,14 +17,16 @@ body:
     validations:
       required: false
   - type: textarea
-    id: what-happened
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      label: Steps To Reproduce
+      description: Steps to reproduce the behavior.
+      placeholder: |
+        1. In this environment...
+        1. With this config...
+        1. Run '...'
+        1. See error...
     validations:
-      required: true
+      required: true  
   - type: dropdown
     id: version
     attributes:
